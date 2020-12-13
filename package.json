@@ -1,0 +1,27 @@
+{
+    "name": "becandjoshadventures.com",
+    "scripts": {
+        "dev": "nuxt-ts",
+        "build": "nuxt-ts build",
+        "generate": "nuxt-ts generate",
+        "start": "nuxt-ts start",
+        "lint": "eslint --ext .ts,.js,.vue ."
+    },
+    "dependencies": {
+        "@braid/vue-formulate": "^2.4.5",
+        "@fontsource/alex-brush": "^4.0.1",
+        "@fontsource/comfortaa": "^4.0.1",
+        "@fontsource/josefin-sans": "^4.0.1",
+        "@nuxt/components": "^1.2.2",
+        "@nuxt/typescript-runtime": "^2.0.0",
+        "googleapis": "^66.0.0",
+        "nuxt": "^2.14.12",
+        "vue2-google-maps": "^0.10.7"
+    },
+    "devDependencies": {
+        "@nuxt/types": "^2.14.12",
+        "@nuxt/typescript-build": "^2.0.3",
+        "sass": "^1.30.0",
+        "sass-loader": "^10.1.0"
+    }
+}
