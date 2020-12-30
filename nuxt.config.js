@@ -1,4 +1,6 @@
 export default {
+  target: "static",
+
   head: {
     title: "Bec and Josh",
     meta: [
@@ -7,7 +9,6 @@ export default {
       {
         hid: "description",
         name: "description",
-        // content: "vue2-google-maps-sample",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
