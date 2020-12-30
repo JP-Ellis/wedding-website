@@ -64,7 +64,7 @@
   flex: 0 0 0px;
 }
 
-@import "@fontsource/alex-brush/400.css";
+@import "@fontsource/alex-brush/latin-400.css";
 .names {
   font: {
     family: "Alex Brush";
@@ -73,7 +73,7 @@
   }
 }
 
-@import "@fontsource/josefin-sans/700.css";
+@import "@fontsource/josefin-sans/latin-700.css";
 .date {
   font: {
     family: "Josefin Sans";
