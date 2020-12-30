@@ -8,6 +8,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import "@fontsource/comfortaa/300.css";
+@import "@fontsource/comfortaa/700.css";
 .container {
   width: 100vw;
   max-width: 2000px;

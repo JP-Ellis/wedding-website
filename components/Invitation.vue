@@ -64,13 +64,16 @@
   flex: 0 0 0px;
 }
 
+@import "@fontsource/alex-brush/400.css";
 .names {
   font: {
     family: "Alex Brush";
+    weight: 400;
     size: 3rem;
   }
 }
 
+@import "@fontsource/josefin-sans/700.css";
 .date {
   font: {
     family: "Josefin Sans";
