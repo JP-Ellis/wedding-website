@@ -15,9 +15,9 @@
         "@fontsource/josefin-sans": "^4.0.1",
         "@nuxt/components": "^1.2.2",
         "@nuxt/typescript-runtime": "^2.0.0",
+        "gmap-vue": "^1.5.0",
         "googleapis": "^66.0.0",
-        "nuxt": "^2.14.12",
-        "vue2-google-maps": "^0.10.7"
+        "nuxt": "^2.14.12"
     },
     "devDependencies": {
         "@nuxt/types": "^2.14.12",

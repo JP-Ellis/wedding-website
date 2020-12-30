@@ -16,9 +16,7 @@ export default {
 
   components: true,
 
-  plugins: ["@/plugins/vue-formulate.ts", "@/plugins/vue2-google-maps.ts"],
+  plugins: ["@/plugins/vue-formulate.ts", "@/plugins/gmap-vue.ts"],
 
-  build: {
-    transpile: [/^vue2-google-maps($|\/)/],
-  },
+  build: { transpile: [/^gmap-vue($|\/)/] },
 };

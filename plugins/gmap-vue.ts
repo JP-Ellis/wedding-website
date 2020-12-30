@@ -1,9 +1,10 @@
 import Vue from "vue";
-import * as VueGoogleMaps from "vue2-google-maps";
+import * as GmapVue from 'gmap-vue'
 
-Vue.use(VueGoogleMaps, {
+Vue.use(GmapVue, {
   load: {
     key: "AIzaSyBYGL06_ul909-rUUMh6vXqPIlmypY1zBA",
     libraries: "places",
   },
+  installComponents: true,
 });
