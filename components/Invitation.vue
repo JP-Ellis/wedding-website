@@ -64,6 +64,11 @@
   flex: 0 0 0px;
 }
 
+.invitation {
+  margin: 1rem;
+  text-align: center;
+}
+
 @import "@fontsource/alex-brush/latin-400.css";
 .names {
   font: {

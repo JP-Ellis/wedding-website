@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <div v-if="!submitted">Please RSVP by <u>23 July 2021</u></div>
+    <div class="rsvp-notice" v-if="!submitted">
+      Please RSVP by <u>23 July 2021</u>
+    </div>
 
     <div class="rsvp-form-wrapper" v-if="!submitted">
       <FormulateForm class="rsvp-form" v-model="formValues" @submit="sendRsvp">
@@ -77,7 +79,9 @@
       </FormulateForm>
     </div>
 
-    <div v-else-if="submitError"></div>
+    <div v-else-if="submitError" class="submit-message submit-error">
+      There was an error processing the RSVP.
+    </div>
     <div v-else>
       <div v-if="attending == 'no'" class="submit-message">
         <p>
@@ -86,7 +90,7 @@
         </p>
         <p>If things change and you can attend, please RSVP again.</p>
       </div>
-      <div v-if="attending == 'yes'">
+      <div v-if="attending == 'yes'" class="submit-message">
         Thank for the RSVP. We looking forward to seeing you soon.
       </div>
     </div>
@@ -101,42 +105,73 @@
     top: 1rem;
     bottom: 1rem;
   }
+}
+
+.rsvp-notice {
   text-align: center;
+  margin: 1rem;
+}
+
+.rsvp-form-wrapper {
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }
 
 .rsvp-form {
-  padding: 2em;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.submit-message {
+  padding: 1rem;
+}
+
+.submit-error {
+  color: darken(red, 40%);
+  background-color: #aa000033;
 }
 </style>
 
 <style lang="scss">
 .formulate-input {
   display: flex;
-  flex-direction: column;
+  flex: {
+    direction: column;
+    wrap: wrap;
+  }
   margin: {
-    top: 1rem;
-    bottom: 1rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
   }
 
   // Wrapper around label/input pairs
   .formulate-input-wrapper {
     display: flex;
+    flex: {
+      wrap: wrap;
+    }
+    align-items: center;
   }
 
-  .formulate-input-label {
-    width: 50vh;
-    min-width: 300px;
-    text-align: right;
+  .formulate-input-label--before {
+    flex: 1 0 150px;
+    max-width: 300px;
+    margin: {
+      left: 0.3rem;
+      bottom: 0.2rem;
+    }
     padding: {
       right: 0.5rem;
-      top: 0.3rem;
     }
   }
 
   // Used with radio labels
   .formulate-input-label--after {
-    text-align: left;
-    width: auto;
+    flex: 1 0 150px;
   }
 
   input[type="text"],
@@ -176,8 +211,8 @@
 
   .formulate-input-group-item {
     margin: {
-      top: 0rem;
-      bottom: 0rem;
+      top: 0.5rem;
+      bottom: 0.5rem;
     }
   }
 
@@ -260,6 +295,7 @@ export default Vue.extend({
     return {
       submitted: false,
       submitError: false,
+      attending: null,
       attending: null,
       guest: null,
       formValues: {},

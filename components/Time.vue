@@ -13,14 +13,19 @@
   display: flex;
   justify-content: space-evenly;
   margin: {
-    top: 2rem;
-    bottom: 2rem;
+    top: 1rem;
+    bottom: 1rem;
+  }
+
+  flex: {
+    wrap: wrap;
   }
 }
 
 .left,
 .right {
-  flex: 1 1 0px;
+  margin: 1rem;
+  flex: 1 1 350px;
   text-align: center;
 }
 </style>

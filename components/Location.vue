@@ -27,30 +27,31 @@
 
 <style lang="scss" scoped>
 .container {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   margin: {
-    bottom: 2rem;
+    bottom: 1rem;
+  }
+
+  flex: {
+    wrap: wrap;
   }
 }
 
 .left {
-  flex: 1 1 0px;
+  margin: 1rem;
+  flex: 1 1 350px;
   text-align: center;
-  margin: auto;
   line-height: 200%;
 }
 
 .right {
-  flex: 1 1 0px;
+  flex: 1 1 350px;
   text-align: center;
-  width: 50%;
 }
 
 .vue-map-container {
-  width: 90%;
-  min-width: 500px;
+  width: 100%;
   height: 500px;
 }
 </style>

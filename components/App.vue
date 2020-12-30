@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="app">
     <Invitation />
     <Location />
     <Time />
@@ -10,7 +10,7 @@
 <style lang="scss" scoped>
 @import "@fontsource/comfortaa/latin-300.css";
 @import "@fontsource/comfortaa/latin-700.css";
-.container {
+.app {
   width: 100vw;
   max-width: 2000px;
   background-color: #f9ffff;
