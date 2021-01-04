@@ -73,7 +73,7 @@ h1 {
   justify-content: space-around;
 
   & > div {
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     flex: 1 1 500px;
     text-align: center;
     max-width: 700px;

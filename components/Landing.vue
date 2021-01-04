@@ -1,7 +1,11 @@
 <template>
   <div id="landing">
     <div class="invitation">
-      <div>You are invited to celebrate the wedding of</div>
+      <div>
+        <span>You are invited</span>
+        <span>to celebrate</span>
+        <span>the wedding of</span>
+      </div>
     </div>
     <div class="names"><div>Bec &amp; Josh</div></div>
     <div class="date">23<br />10<br />21</div>

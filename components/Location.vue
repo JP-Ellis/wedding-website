@@ -41,6 +41,13 @@
 
   div {
     max-width: 100%;
+
+    &:nth-last-child(1) {
+      padding: {
+        left: 0;
+        right: 0;
+      }
+    }
   }
 
   .text {

@@ -4,11 +4,13 @@
       <p>
         <span>Ceremony commences</span>
         <span>at 4pm</span> <br />
-        Dinner and dancing to follow
+        <span>Dinner and dancing to follow</span>
       </p>
       <p>
-        <span>Please join us for our wedding breakfast</span>
-        <span> at the estate homestead at 10am on Sunday.</span>
+        <span>Please join us</span>
+        <span>for our wedding breakfast</span>
+        <span>at the estate homestead</span>
+        <span>at 10am on Sunday.</span>
       </p>
     </div>
     <div>
