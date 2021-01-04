@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="left">
+  <div id="location" class="two-column">
+    <div>
       Celebration will be held at<br />
       <a
         href="https://www.sevilleestate.com.au/"
@@ -11,7 +11,7 @@
         Seville Estate
       </a>
     </div>
-    <div class="right">
+    <div>
       <GmapMap :center="center" :zoom="zoom">
         <GmapMarker
           :key="index"
@@ -25,29 +25,16 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.container {
-  display: flex;
-  justify-content: space-around;
-  margin: {
-    bottom: 1rem;
+<style lang="scss">
+#location {
+  z-index: 900;
+  background-color: #f9ffff;
+  margin-bottom: 1rem;
+  align-items: center;
+
+  div {
+    max-width: 100%;
   }
-
-  flex: {
-    wrap: wrap;
-  }
-}
-
-.left {
-  margin: 1rem;
-  flex: 1 1 350px;
-  text-align: center;
-  line-height: 200%;
-}
-
-.right {
-  flex: 1 1 350px;
-  text-align: center;
 }
 
 .vue-map-container {

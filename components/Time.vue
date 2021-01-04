@@ -1,31 +1,30 @@
 <template>
-  <div class="container">
-    <div class="left">Lorem ipsum dolor sit amet</div>
-    <div class="right">
-      Ceremony commences at 4pm <br />
-      Dinner and dancing to follow
+  <div id="time" class="two-column">
+    <div>
+      <p>
+        <span>Ceremony commences</span>
+        <span>at 4pm</span> <br />
+        Dinner and dancing to follow
+      </p>
+      <p>
+        <span>Please join us for our wedding breakfast</span>
+        <span> at the estate homestead at 10am on Sunday.</span>
+      </p>
+    </div>
+    <div>
+      <h1>Wishing Well</h1>
+      <p>
+        <span>Your love laughter and company on our wedding day</span><br />
+        <span> is the greatest gift of all</span><br />
+        <span>should you wish to celebrate us with a gift</span><br />
+        <span> a wishing well is provided for all</span>
+      </p>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  margin: {
-    top: 1rem;
-    bottom: 1rem;
-  }
-
-  flex: {
-    wrap: wrap;
-  }
-}
-
-.left,
-.right {
-  margin: 1rem;
-  flex: 1 1 350px;
-  text-align: center;
+<style lang="scss">
+#margin {
+  margin: 0 1rem;
 }
 </style>
