@@ -65,6 +65,24 @@
         will require a COVID-19 vaccine.
       </p>
     </div>
+    <div>
+      <h1>Contact</h1>
+      <p>
+        Rebecca Sullivan &amp; Joshua Ellis <br />
+        611/77 Queens Rd <br />
+        Melbourne VIC 3004 <br />
+      </p>
+      <p>
+        <a href="tel:0061429024111">+61 429 024 111 (Josh)</a><br />
+        <a href="tel:0061407577813">+61 407 577 813 (Bec)</a>
+      </p>
+      <p>
+        <a href="mailto:josh@jpellis.me">josh@jpellis.me</a><br />
+        <a href="mailto:becsulllivan1993@gmail.com"
+          >becsullivan1993@gmail.com</a
+        >
+      </p>
+    </div>
   </div>
 </template>
 

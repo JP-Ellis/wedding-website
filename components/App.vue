@@ -44,11 +44,50 @@ a[href^="//"]:not([href*="becandjoshadventures.com"])
   &::after {
     content: "";
     display: inline-block;
-    background-image: url("~assets/images/external-link.svg");
+    background-image: url("~@fortawesome/fontawesome-free/svgs/solid/external-link-alt.svg");
     background-size: 100%;
     width: 0.5em;
     height: 0.5em;
+    margin-left: 0.1em;
     margin-bottom: 0.3em;
+  }
+}
+
+a[href^="tel:"] {
+  font: {
+    weight: inherit;
+  }
+  text-decoration: {
+    line: inherit;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-image: url("~@fortawesome/fontawesome-free/svgs/solid/phone-alt.svg");
+    background-size: 100%;
+    width: 0.7em;
+    height: 0.7em;
+    margin-right: 0.2em;
+  }
+}
+
+a[href^="mailto:"] {
+  font: {
+    weight: inherit;
+  }
+  text-decoration: {
+    line: inherit;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-image: url("~@fortawesome/fontawesome-free/svgs/solid/envelope.svg");
+    background-size: 100%;
+    width: 0.7em;
+    height: 0.7em;
+    margin-right: 0.2em;
   }
 }
 
@@ -88,8 +127,11 @@ h1 {
   }
 }
 
-p span {
-  display: inline-block;
+p,
+div {
+  & > span {
+    display: inline-block;
+  }
 }
 </style>
 
