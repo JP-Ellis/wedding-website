@@ -32,6 +32,7 @@
             type="submit"
             name="Submit"
             v-bind:class="{ processing: processing }"
+            v-bind:disabled="processing"
           />
         </FormulateForm>
       </div>
@@ -103,6 +104,7 @@ export default Vue.extend({
         body: JSON.stringify(data),
       })
         .then((response) => {
+          console.log("response: ", response);
           this.submitted = true;
           return response.json();
         })
@@ -114,6 +116,8 @@ export default Vue.extend({
           }
         })
         .catch((error) => {
+          console.log("Error: ", error);
+          this.submitted = true;
           this.submitError = true;
         });
 

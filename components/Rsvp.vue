@@ -79,6 +79,7 @@
           type="submit"
           name="RSVP"
           v-bind:class="{ processing: processing }"
+          v-bind:disabled="processing"
         />
       </FormulateForm>
     </div>
@@ -201,6 +202,8 @@ export default Vue.extend({
           }
         })
         .catch((error) => {
+          console.log("Error: ", error);
+          this.submitted = true;
           this.submitError = true;
         });
 
