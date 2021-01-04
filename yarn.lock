@@ -871,15 +871,15 @@
   resolved "https://registry.yarnpkg.com/@fontsource/alex-brush/-/alex-brush-4.0.1.tgz#395e6af2aaf89949aad5f8c4c89a37b806ae29ec"
   integrity sha512-mtUA18B780sBiThX8pIGzJSqsUtzzXLQUVCBGMnK41Yn+PEBQyY/cM2S/PO3qqwFHtlSOwSTpkLsr8ow70pgow==
 
-"@fontsource/comfortaa@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/comfortaa/-/comfortaa-4.0.1.tgz#333680a937f04fdf5af0992b7621e2f38ead973b"
-  integrity sha512-EvaVg88CZ/t1u5m0QamQR7qD+bBVBXGdFfFOVQRCNdTShKK+fQy0tRdsVhHmWobgXCZD7cNq0S8945D8nPeXBA==
-
 "@fontsource/josefin-sans@^4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@fontsource/josefin-sans/-/josefin-sans-4.0.1.tgz#6afd56bbbac93249ad7013cd2f115edff25dfcc1"
   integrity sha512-JUeo4Qm7kSBbivyY6AbyWNexP6JHEJMRJ49b2hSG/tU/IrYoJtwC8oqrxkd4emgyiZ/t3bLbqcifvi0B4ZYAdA==
+
+"@fontsource/poiret-one@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/poiret-one/-/poiret-one-4.1.0.tgz#26e79a2cc493315519c020bfcf17de40113e945c"
+  integrity sha512-pLmXFOM8LThotY+gILEKmCqVUIxTx4zNxnq09WYTa+U6hjkxye80ShgZaDHy9E+nq7EhqpVmI1x9hqv028b/Lw==
 
 "@google/markerclustererplus@^5.1.0":
   version "5.1.3"

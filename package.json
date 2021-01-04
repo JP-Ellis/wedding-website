@@ -11,8 +11,8 @@
     "dependencies": {
         "@braid/vue-formulate": "^2.4.5",
         "@fontsource/alex-brush": "^4.0.1",
-        "@fontsource/comfortaa": "^4.0.1",
         "@fontsource/josefin-sans": "^4.0.1",
+        "@fontsource/poiret-one": "^4.1.0",
         "@nuxt/components": "^1.2.2",
         "@nuxt/typescript-runtime": "^2.0.0",
         "gmap-vue": "^1.5.0",
