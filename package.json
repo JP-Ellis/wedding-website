@@ -1,12 +1,15 @@
 {
     "name": "becandjoshadventures.com",
+    "license": "MIT",
     "scripts": {
         "dev": "nuxt-ts",
         "build": "nuxt-ts build",
         "generate": "nuxt-ts generate",
         "start": "nuxt-ts start",
         "lint": "eslint --ext .ts,.js,.vue .",
-        "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+        "deploy:generate": "run-s generate",
+        "deploy:push": "push-dir --dir=dist --branch=gh-pages --cleanup",
+        "deploy": "run-s deploy:generate deploy:push"
     },
     "dependencies": {
         "@braid/vue-formulate": "^2.4.5",
@@ -17,6 +20,7 @@
         "@nuxt/typescript-runtime": "^2.0.0",
         "gmap-vue": "^1.5.0",
         "googleapis": "^66.0.0",
+        "npm-run-all": "^4.1.5",
         "nuxt": "^2.14.12"
     },
     "devDependencies": {
