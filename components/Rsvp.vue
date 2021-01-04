@@ -1,7 +1,7 @@
 <template>
   <div id="rsvp">
     <div class="rsvp-notice" v-if="!submitted">
-      Répondez s'il vous plaît by <u>23 July 2021</u>
+      Répondez s'il vous plaît by <u>26 July 2021</u>
     </div>
 
     <div class="rsvp-form-wrapper" v-if="!submitted">
