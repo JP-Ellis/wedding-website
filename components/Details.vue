@@ -8,27 +8,39 @@
         staying so we can suggest shared travel with other guests.
       </p>
 
-      <FormulateForm class="rsvp-form" v-model="formValues" @submit="sendRsvp">
-        <FormulateInput
-          name="name"
-          type="text"
-          label="Name"
-          placeholder="Your name"
-          validation="required"
-        />
-        <FormulateInput
-          name="accommodation"
-          type="textarea"
-          label="Accommodation"
-          placeholder="Your accommodation details"
-        />
+      <div v-if="!submitted">
+        <FormulateForm
+          class="accommodation-form"
+          v-model="formValues"
+          @submit="sendAccommodation"
+        >
+          <FormulateInput
+            name="name"
+            type="text"
+            label="Name"
+            placeholder="Your name"
+            validation="required"
+          />
+          <FormulateInput
+            name="accommodation"
+            type="textarea"
+            label="Accommodation"
+            placeholder="Your accommodation details"
+          />
 
-        <FormulateInput
-          type="submit"
-          name="Submit"
-          v-bind:class="{ processing: processing }"
-        />
-      </FormulateForm>
+          <FormulateInput
+            type="submit"
+            name="Submit"
+            v-bind:class="{ processing: processing }"
+          />
+        </FormulateForm>
+      </div>
+      <div v-else-if="submitError" class="submit-message submit-error">
+        There was an error processing the form.
+      </div>
+      <div v-else class="submit-message">
+        Thank you for letting us know of your accommodation details.
+      </div>
     </div>
     <div>
       <h1>Overseas Travel</h1>
@@ -67,4 +79,46 @@
 </style>
 
 <script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  data() {
+    return {
+      processing: false,
+      submitted: false,
+      submitError: false,
+      formValues: {},
+    };
+  },
+
+  methods: {
+    async sendAccommodation(data) {
+      this.processing = true;
+
+      const scriptUrl =
+        "https://script.google.com/macros/s/AKfycbxhFyJ7y6qetFepFe8vJg3KnBkouh3TC5r1Q50vcnCRWT2hqNUkvKK4/exec";
+
+      await fetch(scriptUrl, {
+        method: "POST",
+        body: JSON.stringify(data),
+      })
+        .then((response) => {
+          this.submitted = true;
+          return response.json();
+        })
+        .then((data) => {
+          if (data["result"] == "success") {
+            this.submitError = false;
+          } else {
+            this.submitError = true;
+          }
+        })
+        .catch((error) => {
+          this.submitError = true;
+        });
+
+      this.processing = false;
+    },
+  },
+});
 </script>

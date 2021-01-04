@@ -166,8 +166,6 @@
 <script lang="ts">
 import Vue from "vue";
 
-async function sendRsvp(data) {}
-
 export default Vue.extend({
   data() {
     return {
@@ -185,7 +183,7 @@ export default Vue.extend({
       this.processing = true;
 
       const scriptUrl =
-        "https://script.google.com/macros/s/AKfycbxhFyJ7y6qetFepFe8vJg3KnBkouh3TC5r1Q50vcnCRWT2hqNUkvKK4/dev";
+        "https://script.google.com/macros/s/AKfycbxhFyJ7y6qetFepFe8vJg3KnBkouh3TC5r1Q50vcnCRWT2hqNUkvKK4/exec";
 
       await fetch(scriptUrl, {
         method: "POST",
