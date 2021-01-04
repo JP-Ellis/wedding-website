@@ -1,6 +1,5 @@
 <template>
-  <div class="app">
-    <Invitation />
+    <Landing />
     <Location />
     <Time />
     <Rsvp />
