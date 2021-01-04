@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 noscript {
   display: flex;
   flex-direction: column;
