@@ -7,7 +7,9 @@
         <span>the wedding of</span>
       </div>
     </div>
-    <div class="names"><div>Bec &amp; Josh</div></div>
+    <div class="names">
+      <div>Bec &amp;<span style="margin-right: -1ex"></span> Josh</div>
+    </div>
     <div class="date">23<br />10<br />21</div>
     <div></div>
     <div></div>
