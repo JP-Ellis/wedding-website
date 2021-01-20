@@ -47,7 +47,7 @@
             placeholder="Your dietary requirements"
           />
           <FormulateInput
-            name="guest"
+            name="has-guest"
             type="radio"
             label="Guest"
             validation="required"
@@ -55,10 +55,10 @@
               yes: 'Yes, I will be bringing a guest',
               no: 'No, I won\'t be bringing a guest',
             }"
-            v-model="guest"
+            v-model="hasGuest"
           />
 
-          <FormulateInput type="group" name="guests" v-if="guest == 'yes'">
+          <FormulateInput type="group" name="guest" v-if="hasGuest == 'yes'">
             <FormulateInput
               name="name"
               type="text"
@@ -174,7 +174,7 @@ export default Vue.extend({
       submitted: false,
       submitError: false,
       attending: null,
-      guest: null,
+      hasGuest: null,
       formValues: {},
     };
   },
