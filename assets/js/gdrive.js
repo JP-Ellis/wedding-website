@@ -18,7 +18,7 @@ function processRSVP(data) {
   }
 
   var newRow = [
-    Utilities.formatDate(new Date(), "UTC", "yyyy-mm-dd'T'HH:mm:ss'Z'"),
+    Utilities.formatDate(new Date(), "UTC", "yyyy-MM-dd'T'HH:mm:ss'Z'"),
     data["name"],
     data["email"],
     data["phone"],

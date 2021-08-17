@@ -184,7 +184,7 @@ export default Vue.extend({
       this.processing = true;
 
       const scriptUrl =
-        "https://script.google.com/macros/s/AKfycbxhFyJ7y6qetFepFe8vJg3KnBkouh3TC5r1Q50vcnCRWT2hqNUkvKK4/exec";
+        "https://script.google.com/macros/s/AKfycbwjL37Kj2ffQldfgpfEdfgT7_a-zx0KO_kV00J2TbA4zZHUfwTvDacPpFXDAtZQu_5y/exec";
 
       await fetch(scriptUrl, {
         method: "POST",
