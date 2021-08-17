@@ -93,7 +93,7 @@
           We are sorry to hear you cannot celebrate our wedding with us. We
           thank you for letting us know.
         </p>
-        <p>If things change and you can attend, please RSVP again.</p>
+        <p>If circumstances change and you can attend, please RSVP again.</p>
       </div>
       <div v-if="attending == 'yes'">
         Thank for the <span class="font-small-caps">RSVP</span>. We looking
