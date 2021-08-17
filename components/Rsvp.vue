@@ -24,7 +24,7 @@
           name="phone"
           type="tel"
           label="Phone Number"
-          placeholder="Your phone address"
+          placeholder="Your phone number"
           validation="required|matches:/^\+?[0-9]+$/"
         />
         <FormulateInput
