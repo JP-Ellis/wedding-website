@@ -184,10 +184,13 @@ export default Vue.extend({
       this.processing = true;
 
       const scriptUrl =
-        "https://script.google.com/macros/s/AKfycbwjL37Kj2ffQldfgpfEdfgT7_a-zx0KO_kV00J2TbA4zZHUfwTvDacPpFXDAtZQu_5y/exec";
+        "https://script.google.com/macros/s/AKfycbzzA30jowCrk_VHK-JMXs9jRScP-al0OH6n6BOriM2AKjNHunBrnDgqlG9u6PSQrA5s/exec";
 
       await fetch(scriptUrl, {
         method: "POST",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
         body: JSON.stringify(data),
       })
         .then((response) => {
