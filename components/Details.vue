@@ -46,14 +46,11 @@
     <div>
       <h1>Overseas Travel</h1>
       <p>
-        For those travelling from overseas, we hope that Australian borders will
-        open in time for you to join us on our special day.
-      </p>
-      <p>
-        At present, only permanent residents, citizens and special exemptions
-        are allowed entry. The latest details can be found at the
+        For those travelling from overseas, we hope that you will join us on our
+        special day. Regulation with regards to entry in Australia can be found
+        on the
         <a
-          href="https://covid19.homeaffairs.gov.au/coming-australia"
+          href="https://www.homeaffairs.gov.au/covid19/"
           target="_blank"
           referrerpolicy="no-referrer"
           rel="noreferrer external"
@@ -61,8 +58,9 @@
         >.
       </p>
       <p>
-        If travel restrictions ease, it is likely that all incoming travellers
-        will require a COVID-19 vaccine.
+        As from 18 April 2022, tourists entering Australia must be fully
+        vaccinated, and most states require a negative test within 24 hours of
+        arrival (either RAT or PCR).
       </p>
     </div>
     <div>
@@ -106,7 +104,7 @@ export default Vue.extend({
       processing: false,
       submitted: false,
       submitError: false,
-      formValues: {},
+      formValues: {}
     };
   },
 
@@ -119,28 +117,28 @@ export default Vue.extend({
 
       await fetch(scriptUrl, {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify(data)
       })
-        .then((response) => {
+        .then(response => {
           console.log("response: ", response);
           this.submitted = true;
           return response.json();
         })
-        .then((data) => {
+        .then(data => {
           if (data["result"] == "success") {
             this.submitError = false;
           } else {
             this.submitError = true;
           }
         })
-        .catch((error) => {
+        .catch(error => {
           console.log("Error: ", error);
           this.submitted = true;
           this.submitError = true;
         });
 
       this.processing = false;
-    },
-  },
+    }
+  }
 });
 </script>
